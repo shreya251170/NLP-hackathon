@@ -14,7 +14,9 @@ def preprocess(text):
     tok = RegexpTokenizer(r'\w+')
     no_punc = tok.tokenize(txt)
     lower = no_punc
+    #lower=txt.split()
     words = []
+    #print(lower)
     for x in lower:
         words.append(x.lower())    
     return words
